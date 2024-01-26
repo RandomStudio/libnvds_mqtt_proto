@@ -8,9 +8,11 @@ This repo holds a few pieces of code taken from the web plus a tested NVDS pipel
 
 - Install MQTT broker `sudo apt install mosquitto`
 - Install `paho.mqtt.c` & `paho.mqtt.cpp` with dependencies:
-    - Run `mkdir build-deps; bash mqtt_install.sh` for an auto-install
+    - Run `mkdir build-deps'
+    - `sudo mqtt_install.sh` for an auto-install
 - Compile `libnvds_mqtt_proto.cpp` by running `make`.
-    - This generates `libnvds_mqtt_proto.so`, and we're good to go.
+    - This generates `libnvds_mqtt_proto.so`
+    - Copy to the expected location: `sudo cp libnvds_mqtt_proto.so /opt/nvidia/deepstream/deepstream/lib/`
 
 
 ## Usage
